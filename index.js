@@ -18,7 +18,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 
 async function run() {
     try {
-        const productCollection = client.db('emaJohn').collection('products')
+        const productCollection = client.db('ema-jon-smile').collection('products')
 
         app.get('/products', async (req, res) => {
             const page = parseInt(req.query.page);
